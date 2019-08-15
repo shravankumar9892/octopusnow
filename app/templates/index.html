@@ -1,0 +1,200 @@
+<!-- Hello ma'am this is Shravan here, currently studying in SVNIT. I see that you a deep interest in building systems that are accessible to everyone and also your thesis was on Pronunciation Modeling for Synthesis of Low Resource Languages, which makes me very greedy for learning from you. -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv='x-dns-prefetch-control' content='on'>
+	<title>Octopus Now | Free online healthcare for Indians</title>
+	<link rel="icon" type="image/ico" href="{{url_for('static', filename='img/octopusnow.png')}}" />
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href="{{url_for('static', filename='css/style.min.css')}}" />
+	<link rel='stylesheet' href="{{url_for('static', filename='css/octopusnow.css')}}" />
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300i&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+		#talktous {
+			color: #00c28f;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<!-- Hero(extended) navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container_">
+			<div class="navbar__inner">
+				<a href="{{url_for('session')}}" class="navbar__logo"><img src="{{url_for('static', filename='img/octopusnow.png')}}" id="logoimg"><span style="font-family: 'Alegreya Sans', sans-serif !important;">Octopus</span>&nbsp;<span style="font-family: 'Roboto Condensed', sans-serif !important;">Now</span></a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="{{url_for('contactus')}}">Contact us</a></li>
+						<li><a href="https://rzp.io/l/0V1Kd54">Subscribe</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container_">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<h1 class="hero__title">Free healthcare for all Indians</h1>
+						<div id="form">
+								<form action="{{url_for('octopusnow')}}" method='POST' style="display: inline;">
+									<input type="text" name="search" id="searchbar" class="searchbar" placeholder="&#x1F50D;">
+									<input type="submit" name="submitbutton" id="button" value="" class="searchbar">
+								</form>
+							</div>
+						<!-- <p class="hero__text">Now getting professional advice on healthcare has become ever easy because of Octopus Now. You can consult doctor online for free if you are an Indian. We want to help 95% of world population cure diseases affordably and quickly.</p> -->
+						<a href="{{url_for('contactus')}}" class="button button__accent">Contact us</a>
+						<a href="{{url_for('aboutus')}}" class="button hero__button">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero__sub">
+		<span id="scrollToNext" class="scroll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
+	</div>
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container_">
+			<h2><a href="{{url_for('session')}}"><span style="font-family: 'Alegreya Sans', sans-serif !important;">Octopus</span>&nbsp;<span style="font-family: 'Roboto Condensed', sans-serif !important;">Now</span></a>&nbsp; से किसे होगा फायदा?</h2>
+			<p>Yes you guessed it right.</p>
+		</div>
+		<div class="container_">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="{{url_for('static', filename='img/profilepic.svg')}}" class="step__image">
+					</div>
+					<h4>People</h4>
+					<p class="step__text">Octopus Now is completely free for Indians and has lowest reply time of all online doctor consultaion platform. <span id="talktous"><a href="http://octopusnow.herokuapp.com/aboutus#people">Talk to us...</a></span></p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="{{url_for('static', filename='img/undraw_doctors_hwty.svg')}}" class="step__image">
+					</div>
+					<h4>Hospitals & Clinics</h4>
+					<p class="step__text">High medical traffic on Octopus Now is used by Hospitals & Clinics to pull in right type of patients to their place. <span id="talktous"><a href="http://octopusnow.herokuapp.com/aboutus#hospitals">Talk to us...</a></span></p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="{{url_for('static', filename='img/undraw_growth_analytics_8btt.svg')}}" class="step__image">
+					</div>
+					<h4>Data Scientists</h4>
+					<p class="step__text">Are you a data science enthusiast? Great! Deploy your Medical Q&A retrival on Octopus Now to see it in action. <span id="talktous"><a href="http://octopusnow.herokuapp.com/aboutus#datascientists">Talk to us...</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="cta cta--reverse">
+		<div class="container_">
+			<div class="cta__inner">
+				<h2 class="cta__title">Organization, University or Data Scientists?</h2>
+				<p class="cta__sub cta__sub--center">Contact us below to know how can you collaborate with Octopus Now.</p>
+				<a href="{{url_for('contactus')}}" class="button button__accent">Contact us</a>
+			</div>
+		</div>
+	</div>
+	<!-- Expanded sections -->
+	<div class="expanded landing__section">
+		<div class="container_">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="{{url_for('static', filename='img/undraw_browser.svg')}}" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">AI based answers</h2>
+					<p class="expanded__text">This is a one of its kind AI engine which answers your quiries to medical concerns by learning from data all across internet, Quora, Reddit, Pubmed, PMC, etc. And this AI engine will never get annoyed by your questions.</p>
+					<div class="razorpay-embed-btn" data-url="https://rzp.io/l/0V1Kd54" data-text="Subscribe" data-color="#528FF0" data-size="large">
+  					<script>
+    					(function(){
+      									var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+      									if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+      									s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+      									rzp && rzp.init && rzp.init()}})();
+  					</script>
+					</div>
+    
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container_">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="{{url_for('static', filename='img/undraw_selfie.svg')}}" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Once entered you're all set to start asking questions.</h2>
+					<p class="expanded__text">Once downloaded, you are all set to start asking questions to Octopus Now.</p>
+					<div class="razorpay-embed-btn" data-url="https://rzp.io/l/0V1Kd54" data-text="Subscribe" data-color="#528FF0" data-size="large">
+  					<script>
+    					(function(){
+      									var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+      									if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+      									s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+      									rzp && rzp.init && rzp.init()}})();
+  					</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+	<div class="cta cta--reverse">
+		<div class="container_">
+			<div class="cta__inner">
+				<h2 class="cta__title">Get started now</h2>
+				<p class="cta__sub cta__sub--center">Contact us below to know more about Octopus Now.</p>
+				<a href="#form" class="button button__accent">Ask now</a>
+			</div>
+		</div>
+	</div>
+	<div class="background-img" >
+		<a href="{{url_for('contactus')}}"><img src="{{url_for('static', filename='img/undraw_chatting_2yvo.svg')}}" id="background-img"></a>
+	</div>
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container_">
+			<div class="footer__inner">
+				<a href="{{url_for('session')}}" class="footer__textLogo">Octopus Now</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Created by <a href="https://twitter.com/shravan9892" target="_blank" class="footer__link">Shravankumar Shetty</a>
+						</div>
+						<div class="footer__row">
+						Code by <a href="https://twitter.com/shravan9892" target="_blank" class="footer__link">Shravankumar Shetty</a>
+						</div>
+					</div>
+					<div class="footer__data__item">
+						<div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">Octopus Now</a>
+						</div>
+					</div>
+					<div class="footer__data__item">
+					<div class="footer__row">
+						<a href="https://instagram.com/octopusnow" target="_blank" class="footer__link">Instagram</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="{{url_for('static', filename='js/app.min.js')}}"></script>
+</body>
+</html>

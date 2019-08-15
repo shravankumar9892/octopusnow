@@ -1,0 +1,11 @@
+::-webkit-input-placeholder { text-align:right; }
+		/* mozilla solution */
+		input:-moz-placeholder { text-align:right; }
+
+#button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
+}

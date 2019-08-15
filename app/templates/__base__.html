@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% block head %}
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel='stylesheet' href="{{url_for('static', filename='css/style.min.css?version=3.2')}}" />
+	<link rel="icon" type="image/ico" href="{{url_for('static', filename='img/octopusnow.png')}}" />
+	
+	<title>{% block title %}{% endblock %}</title>
+	{% endblock %}
+</head>
+<body>
+	
+	<div id="content">
+		{% block content %}
+		{% endblock %}
+	</div>
+	<div class="footer footer--dark">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__textLogo">Octopus Now</a>
+        <div class="footer__data">
+          <div class="footer__data__item">
+            <div class="footer__row">
+              Created by <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link">Shravankumar Shetty</a>
+            </div>
+            <div class="footer__row">
+            Code/design by <a href="https://twitter.com/anges244" target="_blank" class="footer__link">Aggelos Gesoulis</a>
+            </div>
+          </div>
+          <div class="footer__data__item">
+            <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">Octopus Now</a>
+            </div>
+          </div>
+          <div class="footer__data__item">
+          <div class="footer__row">
+            <a href="https://instagram.com/octopusnow" target="_blank" class="footer__link">Instagram</a>
+          </div>
+          <div class="footer__row">
+            <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="{{url_for('static', filename='js/app.min.js')}}"></script>
+
+</body>
+</html>

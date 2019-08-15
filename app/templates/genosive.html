@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv='x-dns-prefetch-control' content='on'>
+	<title>Octopus Now | Free online healthcare for Indians</title>
+	<link rel="icon" type="image/ico" href="{{url_for('static', filename='img/octopusnow.png')}}" />
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href="{{url_for('static', filename='css/style.min.css')}}" />
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300i&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+		#talktous {
+			color: #00c28f;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container_">
+			<div class="navbar__inner">
+				<a href="{{url_for('session')}}" class="navbar__logo"><img src="{{url_for('static', filename='img/octopusnow.png')}}" id="logoimg"><span style="font-family: 'Alegreya Sans', sans-serif !important;">Octopus</span>&nbsp;<span style="font-family: 'Roboto Condensed', sans-serif !important;">Now</span></a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="{{url_for('contactus')}}">Contact us</a></li>
+						<li><a href="{{url_for('aboutus')}}">Learn more</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container_">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<form action="" method="POST">
+							
+								<input type="text" name="question" placeholder="Ask Paul...">
+								<input class="button button__accent" type="submit" name="Submit" value="&#x1F50D;">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

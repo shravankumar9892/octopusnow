@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+      <link rel="stylesheet" href="{{url_for('static', filename='css/contactus.css')}}">
+
+  
+</head>
+
+<body>
+  <section class="get-in-touch">
+   <h1 class="title">Get in touch</h1>
+   <form action="" class="contact-form row" method="POST">
+    {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <p class="flashes"><strong>{{ messages[-1] }}</strong></p>
+            {% endif %}
+        {% endwith %}
+      <div class="form-field col x-50">
+         <input id="name" class="input-text js-input" name="name" type="text" required>
+         <label class="label" for="name">Name</label>
+      </div>
+      <div class="form-field col x-50">
+         <input id="occupation" class="input-text js-input" name="occupation" type="text" required>
+         <label class="label" for="occupation">Occupation</label>
+      </div>
+      <div class="form-field col x-50">
+         <input id="email" class="input-text js-input" name="email" type="email" required>
+         <label class="label" for="email">Email</label>
+      </div>
+      <div class="form-field col x-50">
+         <input id="mobile" class="input-text js-input" name="mobile" type="text" required>
+         <label class="label" for="mobile">Mobile</label>
+      </div>
+      <div class="form-field col x-100">
+         <input id="message" class="input-text js-input" name="text" type="text" required>
+         <label class="label" for="message">Message</label>
+      </div>
+      <div class="form-field col x-100 align-center">
+         <input class="submit-btn" type="submit" value="Submit">
+      </div>
+   </form>
+</section>
+<p class="note">Created by <a class="link" href="http://redcollar.digital/contacts/" target="blank">Red Collar Contact Form</a>.</p>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="{{url_for('static', filename='js/contactus.js')}}"></script>
+
+
+
+
+</body>
+
+</html>

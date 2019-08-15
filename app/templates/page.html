@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Learn more about Octopus Now | Free online healthcare for Indians</title>
+	<link rel="icon" type="image/ico" href="{{url_for('static', filename='img/octopusnow.png')}}" />
+	<link rel='stylesheet' href="{{url_for('static', filename='css/style.min.css')}}" />
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300i&display=swap');
+		.users {
+			padding-right:20px; 
+			padding-left:20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Hero(extended) navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container_">
+			<div class="navbar__inner">
+				<a href="{{url_for('session')}}" class="navbar__logo"><span style="font-family: 'Alegreya Sans', sans-serif !important;">Octopus</span>&nbsp;<span style="font-family: 'Roboto Condensed', sans-serif !important;">Now</span></a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="{{url_for('contactus')}}">Contact us</a></li>
+						<li><a href="{{url_for('aboutus')}}">Learn more</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit --><div class="page__header">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="page__header__inner">
+			<div class="container">
+				<div class="page__header__content">
+					<div class="page__header__content__inner" id='navConverter'>
+						<h1 class="page__header__title">We care for our users</h1>
+						<p class="page__header__text">We understand importance of healthcare technology innovation in India and hence want to give you all an opportunity to contribute for the healthcare AI revolution Octopus Now is bringing in.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page content -->
+	<div class="page">
+		<div class="container">
+			<div class="page__inner">
+				<div class="page__menu">
+					<ul class="vMenu">
+						<li><a href="#people">People</a></li>
+						<li><a href="#hospitals">Hospitals & Clinics</a></li>
+						<li><a href="#datascientists">Data Scientists</a></li>
+					</ul>
+				</div>
+				<div class="page__main">
+					<div class="text-container">
+						<div id="people" class="users">
+							<h3>People</h3>
+							<p><strong>To know how can you gain benefits from Octopus Now click <a href="{{url_for('contactus')}}">here</a></strong>. We know technology has taken us so far, but healthcare is the sector where India still lacks technological development towards users side. As we all prefer offline doctor visits, etc. Octopus Now would give you AI based solution for your problem instantly. You don't have to compromise with your health anymore.</p>
+						</div>
+						<div id="hospitals" class="users">
+							<h3>Hospitals & Clinics</h3>
+							<p><strong>To know how can you gain benefits from Octopus Now click <a href="{{url_for('contactus')}}">here</a></strong>. A high medical traffic application always pampers Hospitals & Clinics. Appoint your medical assistant or a doctor to answer patient query and check if the patient suites you. Octopus Now serves both patients & Hospitals & Clinics for the betterment of each other. <a href="{{url_for('contactus')}}">Contact us</a> to know more about this scheme.</p>
+						</div>
+						<div id="datascientists" class="users">
+							<h3>Data Scientists</h3>
+							<p><strong>To know how can you gain benefits from Octopus Now click <a href="{{url_for('contactus')}}">here</a></strong>. Data science enthusiasts and students from various colleges have this curiosity of building models. Octpous Now gives you an opportunity to build and deploy your medical Q&A retrival model and run in real life. Check the quality of your answers by real patient reviews and build on it. Octopus Now serves as an important tool for Data Science practitioners to excel in their career.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="{{url_for('static', filename='js/app.min.js')}}"></script>
+</body>
+</html>
