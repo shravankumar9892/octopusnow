@@ -36,7 +36,7 @@ Werkzeug==0.15.4
 joblib==0.13.2
 faiss==1.5.3
 mkl==2019.0
-tensorflow-gpu==2.0.0-alpha0
+tensorflow-gpu==2.6.4
 https://github.com/re-search/DocProduct/archive/v0.2.0_dev.zip
 gpt2-estimator
 pyarrow
